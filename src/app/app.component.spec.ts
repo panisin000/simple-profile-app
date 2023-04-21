@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'simple-profile-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('simple-profile-app');
+    expect(app.title).toEqual('PEAxODDS');
   });
 
   it('should render title', () => {
@@ -31,6 +31,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     // expect(compiled.querySelector('.content span')?.textContent).toContain('simple-profile-app app is running!');
-    expect(compiled.querySelector('.content span')?.textContent).toContain('PEAxODDS coming soon..');
+    expect(compiled.textContent).toContain('PEAxODDS coming soon..');
   });
 });

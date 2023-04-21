@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simple-profile-app';
+  title = 'PEAxODDS';
+  count = 0;
+
+  onClick(v: number): void {
+    this.count += v;
+  }
 }
