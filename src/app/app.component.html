@@ -1,1 +1,16 @@
-⭐⭐⭐⭐⭐⏰⏰⏰⏰⏰ PEAxODDS coming soon.. ⏰⏰⏰⏰⏰⭐⭐⭐⭐⭐
+<div class="content">
+    <p> <span>{{title}}
+
+        </span></p>
+</div>
+<div>count:{{count}}</div>
+<pmf-profile></pmf-profile>
+<!-- <pmf-profile [name]="'abc'" [emoji]="'⏰'"></pmf-profile> -->
+<pmf-profile [name]="'5'" (counter)="onClick($event)"></pmf-profile>
+<pmf-profile [name]="'4'" (counter)="onClick(4)" [emoji]="'⏰'"></pmf-profile>
+<pmf-profile [name]="'3'" [emoji]="'⏰'" (counter)="onClick(3)"></pmf-profile>
+<pmf-profile [name]="'2'" [emoji]="'⏰'" (counter)="onClick(2)"></pmf-profile>
+<pmf-profile [name]="'1'" [emoji]="'⏰'" (counter)="onClick(1)">
+    <p>Hello world
+    </p>
+</pmf-profile>
